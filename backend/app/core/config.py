@@ -11,6 +11,9 @@ class Settings(BaseSettings):
     SECRET_KEY: str = "dev-secret-key"
     DEBUG: bool = True
     
+    # Database
+    DATABASE_URL: str = "sqlite:///./sql_app.db"
+    
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
 @lru_cache()

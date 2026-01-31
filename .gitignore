@@ -39,3 +39,8 @@ dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Backend
+backend/sql_app.db
+backend/init_db.py
+backend/verify_db.py
